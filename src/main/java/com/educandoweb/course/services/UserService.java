@@ -22,5 +22,13 @@ public class UserService {
 		return obj.get();
 	}
 	
+	/**
+	 * fução que salva um usuário no banco de dados 
+	 * @param obj da classe User
+	 * @return o usuario salvo
+	 */
+	public User insert(User obj) {
+		return repository.save(obj);
+	}
 
 }
